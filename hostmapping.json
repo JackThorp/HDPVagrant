@@ -1,0 +1,10 @@
+{ "blueprint":"blueprint-c1",
+  "host_groups":[
+    { "name":"host_group_1",
+      "hosts":[ { "fqdn":"one.cluster" } ] },
+    { "name":"host_group_2",
+      "hosts":[ { "fqdn":"two.cluster" } ] },
+    { "name":"host_group_3",
+      "hosts":[ { "fqdn":"three.cluster" } ] } 
+  ] 
+}

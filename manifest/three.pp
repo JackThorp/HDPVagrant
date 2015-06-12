@@ -16,5 +16,7 @@ class { 'ambari_agent':
   ownhostname    => "three.cluster"
 }
 
+include ambari_blueprint
+
 # Establish ordering
-Class['interfering_services'] -> Class['ntp'] -> Class['etchosts'] -> Class['ambari_agent']
+Class['interfering_services'] -> Class['ntp'] -> Class['etchosts'] -> Class['ambari_agent'] -> Class['ambari_blueprint']
